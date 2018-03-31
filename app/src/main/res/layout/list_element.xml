@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:columnCount="2"
+    android:rowCount="2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <TextView
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="70dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/task"
+        android:text="Prova"
+        android:textSize="40sp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:layout_marginTop="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dataTask"
+        android:textSize="25sp"
+        android:text="Prova"/>
+
+    <Button
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Invia"
+        android:id="@+id/btnInvia"/>
+
+    <Button
+        android:layout_marginTop="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aggiungi Dettagli"
+        android:id="@+id/btnDettagli"/>
+
+
+
+
+
+</GridLayout>

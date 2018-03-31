@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "368154546874",
+    "firebase_url": "https://todashcopia.firebaseio.com",
+    "project_id": "todashcopia",
+    "storage_bucket": "todashcopia.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:368154546874:android:c15a6b7b6f736e74",
+        "android_client_info": {
+          "package_name": "com.example.antonio.todash_copia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "368154546874-9d895cvgfamar1b9qavdg88acc2ptnc9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.antonio.todash_copia",
+            "certificate_hash": "c5db04e9943753a542cbb897ab95246f7f356905"
+          }
+        },
+        {
+          "client_id": "368154546874-vkcnsr3j3p03tvavsovss91j38cpphke.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZm0AESjOuPGRhvUBWvDRkjcHbuJweb8c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "368154546874-vkcnsr3j3p03tvavsovss91j38cpphke.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
