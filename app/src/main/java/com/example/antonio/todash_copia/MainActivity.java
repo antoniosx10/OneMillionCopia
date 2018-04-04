@@ -8,6 +8,7 @@ import android.provider.Settings;
 import android.support.annotation.NonNull;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -47,6 +48,8 @@ public class MainActivity extends AppCompatActivity {
         if (requestCode == RC_SIGN_IN) {
             IdpResponse response = IdpResponse.fromResultIntent(data);
 
+            Log.d("ONACTIVITYRESULT","ECCOCI UNO");
+
             if (resultCode == RESULT_OK) {
                 // Successfully signed in
                 FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
@@ -58,11 +61,9 @@ public class MainActivity extends AppCompatActivity {
                     startActivityForResult(intent, 1000);
                 }
 
-                //Usato per testare senza dover ogni volta spegnere e accendere il dispositivo.
-                Intent serviceIntent = new Intent(getApplicationContext(), ListenerService.class);
-                startService(serviceIntent);
 
-                prova = findViewById(R.id.provaTesto);
+
+
                 // ...
             } else {
                 // Sign in failed, check response for error code
@@ -78,6 +79,14 @@ public class MainActivity extends AppCompatActivity {
         FirebaseUser currentUser = mAuth.getCurrentUser();
 
         if (currentUser != null) {
+
+            Log.d("ONACTIVITYRESULT","ECCOCI DUE");
+
+            //Usato per testare senza dover ogni volta spegnere e accendere il dispositivo.
+            Intent serviceIntent = new Intent(getApplicationContext(), ListenerService.class);
+            startService(serviceIntent);
+
+            prova = findViewById(R.id.provaTesto);
 
         } else {
             List<AuthUI.IdpConfig> providers = Arrays.asList(

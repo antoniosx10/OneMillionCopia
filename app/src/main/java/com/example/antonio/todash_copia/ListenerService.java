@@ -152,8 +152,6 @@ public class ListenerService extends Service {
 
     }
 
-
-
     private void stopTimerHead(){
         handler.removeCallbacks(runnable);
     }
